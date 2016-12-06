@@ -134,6 +134,11 @@ hr {
   width: 65%;
   padding: 30px 20px; }
 
+.column2 {
+  float: left;
+  width: 35%;
+  padding: 30px 20px; }
+
 .about {
   margin-bottom: 50px; }
 
@@ -141,6 +146,11 @@ hr {
   height: 80px;
   background: #fafafa;
   border-radius: 3px; }
+
+.getting-started {
+  position: relative;
+  margin-top: 80px;
+  padding-left: 100px; }
 
 .border p {
   color: white; }
@@ -179,8 +189,30 @@ hr {
 .prerequisite h5 {
   margin-top: 15px;
   color: grey; }
-.prerequisite h4 {
-  line-height: 0; }
+
+.getting-started h4.float {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  padding-top: 10px;
+  color: grey;
+  border-top: 1px solid #cdcdcd; }
+
+.column2 h2 {
+  margin: 0;
+  float: none;
+  font-weight: 900; }
+.column2 h5 {
+  margin: 5px 0 0 0; }
+.column2 p {
+  margin-top: 0; }
+.column2 footer {
+  font-size: 0.8em;
+  color: #255A7D;
+  letter-spacing: 0.5px; }
+  .column2 footer a {
+    font-weight: bold;
+    color: #3176a4;
+    text-decoration: none; }
 
 span {
   border-radius: 50px;
@@ -218,6 +250,17 @@ span {
   padding: 10px 15px;
   border-radius: 3px; }
 
+.iTunes {
+  margin-top: 20px;
+  width: 100%;
+  padding: 10px 0;
+  border-radius: 5px;
+  background: none;
+  border: 2px solid #3176a4;
+  font-size: 14px;
+  font-weight: 500;
+  color: #3176a4; }
+
 .icon {
   width: 20px;
   float: left;
@@ -247,5 +290,21 @@ span {
     transform: translate(0, -50%);
     margin: 0;
     display: inline; }
+
+.progress {
+  position: absolute;
+  left: 0px; }
+
+i.videos {
+  font-size: 25px;
+  font-weight: lighter;
+  color: #255A7D;
+  float: left;
+  margin-right: 20px;
+  padding-top: 25px;
+  margin-bottom: 10px; }
+
+.teacher img {
+  float: right; }
 
 /*# sourceMappingURL=application.css.map */

@@ -82,6 +82,11 @@
   width: 65%;
   padding: 30px 20px;
 }
+.column2 {
+  float: left;
+  width: 35%;
+  padding: 30px 20px;
+}
 
 .about {
   margin-bottom: 50px;
@@ -92,4 +97,9 @@
   height: 80px;
   background: lighten($color-text-dark, 48%);
   border-radius: 3px;
+}
+.getting-started {
+  position: relative;
+  margin-top: 80px;
+  padding-left: 100px;
 }

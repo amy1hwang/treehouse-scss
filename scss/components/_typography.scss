@@ -47,7 +47,34 @@
     margin-top: 15px;
     color: $color-text-dark;
   }
-  h4,{
-    line-height: 0;
+}
+.getting-started {
+  h4.float {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    padding-top: 10px;
+    color: $color-text-dark;
+    border-top: 1px solid lighten($color-text-dark, 30%);
+  }
+}
+.column2 {
+  h2 {
+    margin: 0;
+    float: none;
+    font-weight: 900;
+  }
+  h5 {
+    margin: 5px 0 0 0;
+  }
+  p {
+    margin-top: 0;
+  }
+  footer {
+    @include font-style(0.8em, null, $color-css-dark);
+    letter-spacing: 0.5px;
+    a {
+      @include font-style(null, bold, lighten($color-css-dark, 10%));
+      text-decoration: none;
+    }
   }
 }

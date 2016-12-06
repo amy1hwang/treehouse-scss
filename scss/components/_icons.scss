@@ -29,3 +29,19 @@
     display: inline;
   }
 }
+.progress {
+  position: absolute;
+  left: 0px;
+}
+i.videos {
+  @include font-style(25px, lighter, $color-css-dark);
+  float: left;
+  margin-right: 20px;
+  padding-top: 25px;
+  margin-bottom: 10px;
+}
+.teacher {
+  img {
+    float: right;
+  }
+}
