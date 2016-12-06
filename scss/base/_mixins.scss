@@ -1,0 +1,30 @@
+@mixin box-shadow($r: 0, $g: 0, $b: 0, $a: .5) {
+  -webkit-box-shadow: 0px 7px 5px -6px rgba($r, $g, $b, $a);
+  -moz-box-shadow: 0px 7px 5px -6px rgba($r, $g, $b, $a);
+  box-shadow: 0px 7px 5px -6px rgba($r, $g, $b, $a);
+}
+
+@mixin box($position, $pixels: 40px) {
+  float: $position;
+  margin-#{$position}: $pixels;
+}
+
+@mixin container($width: null, $bg: null, $margin: null, $padding: null, $overflow: null) {
+  width: $width;
+  background: $bg;
+  margin: $margin;
+  padding: $padding;
+  overflow: $overflow;
+}
+
+@mixin font-style($f-size:null, $f-weight:null, $f-color:null) {
+  font-size: $f-size;
+  font-weight: $f-weight;
+  color: $f-color;
+}
+@mixin icon($width, $float, $margin, $filter) {
+  width: $width;
+  float: $float;
+  margin: $margin;
+  -webkit-filter: $filter;
+}

@@ -1,0 +1,50 @@
+#wrap{
+  @include container(1220px, $color-container, $center, 20px, auto);
+  margin-top: 10px;
+  padding-bottom: 5px;
+}
+#navbar{
+  @include container(1150px, $color-container, $center, 0px, auto);
+  @include box-shadow;
+}
+
+.module {
+  @include container(520px, $color-text-light, 30px);
+  height: 330px;
+  border-radius: 5px;
+  @include box-shadow($a: .2);
+  &:nth-child(odd) {
+    @include box(left);
+  }
+  &:nth-child(even) {
+    @include box(right);
+  }
+  &:first-child .border, &:last-child .border {
+    background-color: $color-java;
+  }
+  &:nth-child(3) .border{
+    background-color: $color-wordpress;
+  }
+  &:nth-child(2) .border{
+    background-color: $color-python;
+  }
+}
+.border{
+  @include container($margin: 0, $padding: 0);
+  text-align: right;
+  color: $color-text-light;
+  padding-right: 25px;
+  padding-bottom: 5px;
+  padding-top: 5px;
+  border-radius: 5px 5px 0px 0px;
+}
+
+.java{
+  color: $color-java;
+}
+.wordpress{
+  color: $color-wordpress;
+}
+.python{
+  color: $color-python;
+}

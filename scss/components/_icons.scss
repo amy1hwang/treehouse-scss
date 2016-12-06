@@ -1,0 +1,11 @@
+.icon {
+  @include icon(20px, left, 15px 10px auto 30px, invert(100%));
+}
+
+.circle {
+  @include icon(11px, left, 20px auto auto 8px, invert(100%));
+  // -webkit-filter: invert(100%);
+  // width: 11px;
+  // float: left;
+  // margin: 20px auto auto 8px;
+}
