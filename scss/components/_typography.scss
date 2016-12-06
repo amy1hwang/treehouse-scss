@@ -10,3 +10,44 @@
 .header{
   float: right;
 }
+.full-size-module {
+  h1 {
+    @include font-style(2.2em, bolder, $color-text-light);
+    margin-top: -1em;
+    @extend %center;
+  }
+  h3 {
+    @include font-style(1.2em, 800, lighten($color-css-light, 20%));
+    margin-top: 0em;
+    @extend %center;
+  }
+}
+
+.about {
+  h2 {
+    margin: 0;
+    float: none;
+    font-weight: 900;
+  }
+  p {
+    font-size: 1.1em;
+  }
+}
+
+.content h5 {
+  color: black;
+}
+
+.prerequisite {
+  h4, h5 {
+    display: inline-block;
+    margin: 0;
+    }
+  h5 {
+    margin-top: 15px;
+    color: $color-text-dark;
+  }
+  h4,{
+    line-height: 0;
+  }
+}

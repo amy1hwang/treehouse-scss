@@ -4,8 +4,28 @@
 
 .circle {
   @include icon(11px, left, 20px auto auto 8px, invert(100%));
-  // -webkit-filter: invert(100%);
-  // width: 11px;
-  // float: left;
-  // margin: 20px auto auto 8px;
+}
+
+.full-size-module {
+  .circle {
+    opacity: 0.5;
+  }
+  .active {
+    opacity: 1;
+  }
+}
+
+.prerequisite {
+  position: relative;
+  .icon {
+    @include icon(null, null, 30px 40px, invert(60%));
+  }
+  span {
+    position: absolute;
+    top: 50%;
+    right: 2%;
+    transform: translate(0, -50%);
+    margin: 0;
+    display: inline;
+  }
 }

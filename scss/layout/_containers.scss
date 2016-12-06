@@ -29,6 +29,17 @@
     background-color: $color-python;
   }
 }
+.full-size-module {
+  position: relative;
+  @include container(100%, $color-css-dark, 0px);
+  height: 600px;
+  border-radius: 3px 3px 0 0;
+  @include box-shadow($a: .2);
+    .border {
+      background-color: $color-css-light;
+    }
+}
+
 .border{
   @include container($margin: 0, $padding: 0);
   text-align: right;
@@ -36,7 +47,7 @@
   padding-right: 25px;
   padding-bottom: 5px;
   padding-top: 5px;
-  border-radius: 5px 5px 0px 0px;
+  border-radius: 3px 3px 0px 0px;
 }
 
 .java{
@@ -47,4 +58,38 @@
 }
 .python{
   color: $color-python;
+}
+.css {
+  color: $color-css-dark;
+}
+
+.content {
+  @extend %clearfix;
+  background: $color-text-light;
+  padding: 0px 30px;
+}
+.button-bar {
+  @extend %clearfix;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  span {
+    margin-top: 0;
+  }
+}
+
+.column1 {
+  float: left;
+  width: 65%;
+  padding: 30px 20px;
+}
+
+.about {
+  margin-bottom: 50px;
+}
+
+.prerequisite {
+  @extend %clearfix;
+  height: 80px;
+  background: lighten($color-text-dark, 48%);
+  border-radius: 3px;
 }

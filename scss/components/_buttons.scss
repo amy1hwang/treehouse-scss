@@ -24,3 +24,13 @@ span{
   height: 22px;
   opacity: 0.2;
 }
+///course styling
+.resume-btn {
+  @extend %center;
+  margin-top: 3em;
+  @include font-style(14px, 500, $color-css-light);
+  background: $color-text-light;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 3px;
+}
