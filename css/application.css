@@ -43,6 +43,11 @@ hr {
   display: table;
   clear: both; }
 
+.about h2, .column2 h2 {
+  margin: 0;
+  float: none;
+  font-weight: 900; }
+
 #wrap {
   width: 1220px;
   background: #EDEFF0;
@@ -102,9 +107,7 @@ hr {
   padding: 0;
   text-align: right;
   color: white;
-  padding-right: 25px;
-  padding-bottom: 5px;
-  padding-top: 5px;
+  padding: 5px 25px;
   border-radius: 3px 3px 0px 0px; }
 
 .java {
@@ -173,10 +176,6 @@ hr {
   color: #6baad6;
   margin-top: 0em; }
 
-.about h2 {
-  margin: 0;
-  float: none;
-  font-weight: 900; }
 .about p {
   font-size: 1.1em; }
 
@@ -197,10 +196,6 @@ hr {
   color: grey;
   border-top: 1px solid #cdcdcd; }
 
-.column2 h2 {
-  margin: 0;
-  float: none;
-  font-weight: 900; }
 .column2 h5 {
   margin: 5px 0 0 0; }
 .column2 p {
@@ -215,13 +210,13 @@ hr {
     text-decoration: none; }
 
 span {
-  border-radius: 50px;
-  padding: 5px 14px;
-  background-color: white;
-  border: 2px solid lightgrey;
   font-size: 14px;
   font-weight: 900;
   color: grey;
+  border-radius: 50px;
+  padding: 5px 14px;
+  background: white;
+  border: 2px solid lightgrey;
   float: left;
   margin-top: 35px;
   margin-right: 15px; }
@@ -251,15 +246,15 @@ span {
   border-radius: 3px; }
 
 .iTunes {
-  margin-top: 20px;
   width: 100%;
+  background: white;
+  margin: 20px 0 0 0;
   padding: 10px 0;
-  border-radius: 5px;
-  background: none;
-  border: 2px solid #3176a4;
   font-size: 14px;
   font-weight: 500;
-  color: #3176a4; }
+  color: #3176a4;
+  border-radius: 5px;
+  border: 2px solid #3176a4; }
 
 .icon {
   width: 20px;

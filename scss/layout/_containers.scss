@@ -44,9 +44,7 @@
   @include container($margin: 0, $padding: 0);
   text-align: right;
   color: $color-text-light;
-  padding-right: 25px;
-  padding-bottom: 5px;
-  padding-top: 5px;
+  padding: 5px 25px;
   border-radius: 3px 3px 0px 0px;
 }
 
@@ -78,14 +76,10 @@
 }
 
 .column1 {
-  float: left;
-  width: 65%;
-  padding: 30px 20px;
+  @include column(65%)
 }
 .column2 {
-  float: left;
-  width: 35%;
-  padding: 30px 20px;
+  @include column(35%)
 }
 
 .about {

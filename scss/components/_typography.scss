@@ -13,22 +13,18 @@
 .full-size-module {
   h1 {
     @include font-style(2.2em, bolder, $color-text-light);
-    margin-top: -1em;
     @extend %center;
+    margin-top: -1em;
   }
   h3 {
     @include font-style(1.2em, 800, lighten($color-css-light, 20%));
-    margin-top: 0em;
     @extend %center;
+    margin-top: 0em;
   }
 }
 
 .about {
-  h2 {
-    margin: 0;
-    float: none;
-    font-weight: 900;
-  }
+  @extend %column-h2;
   p {
     font-size: 1.1em;
   }
@@ -58,11 +54,7 @@
   }
 }
 .column2 {
-  h2 {
-    margin: 0;
-    float: none;
-    font-weight: 900;
-  }
+  @extend %column-h2;
   h5 {
     margin: 5px 0 0 0;
   }

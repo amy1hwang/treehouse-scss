@@ -1,9 +1,9 @@
 span{
+  @include font-style(14px, 900, $color-text-dark);
   border-radius: 50px;
   padding: 5px 14px;
-  background-color: $color-text-light;
+  background: $color-text-light;
   border: 2px solid lightgrey;
-  @include font-style(14px, 900, $color-text-dark);
   float: left;
   margin-top: 35px;
   margin-right: 15px;
@@ -35,11 +35,8 @@ span{
   border-radius: 3px;
 }
 .iTunes {
-  margin-top: 20px;
-  width: 100%;
-  padding: 10px 0;
-  border-radius: 5px;
-  background: none;
-  border: 2px solid lighten($color-css-dark, 10%);
+  @include container(100%, $color-text-light, 20px 0 0 0, 10px 0, null);
   @include font-style(14px, 500, lighten($color-css-dark, 10%));
+  border-radius: 5px;
+  border: 2px solid lighten($color-css-dark, 10%);
 }
