@@ -14,11 +14,13 @@
     opacity: 1;
   }
 }
-
 .prerequisite {
   position: relative;
   .icon {
     @include icon(null, null, 30px 40px, invert(60%));
+    @media #{$brk-narrow} {
+      margin-left: 10px;
+    }
   }
   span {
     position: absolute;
@@ -32,6 +34,9 @@
 .progress {
   position: absolute;
   left: 0px;
+  @media #{$brk-phone} {
+    display: none;
+  }
 }
 i.videos {
   @include font-style(25px, lighter, $color-css-dark);

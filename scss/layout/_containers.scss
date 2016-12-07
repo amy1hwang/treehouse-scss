@@ -1,13 +1,25 @@
 #wrap{
   @include container(1220px, $color-container, $center, 20px, auto);
-  margin-top: 10px;
   padding-bottom: 5px;
+  @media #{$brk-wide} {
+    width: 100%;
+    padding: 0px;
+  }
 }
+
 #navbar{
   @include container(1150px, $color-container, $center, 0px, auto);
   @include box-shadow;
+  @media #{$brk-wide} {
+    width: 100%;
+  }
 }
-
+.header{
+  float: right;
+  @media #{$brk-phone} {
+    display: none;
+  }
+}
 .module {
   @include container(520px, $color-text-light, 30px);
   height: 330px;
@@ -27,6 +39,29 @@
   }
   &:nth-child(2) .border{
     background-color: $color-python;
+  }
+  @media #{$brk-wide} {
+    width: 43%;
+    margin: 20px 0px;
+  }
+  @media #{$brk-narrow} {
+    width: 90%;
+    float: none;
+    &:nth-child(odd) {
+      float: none;
+      margin-left: 0;
+      margin-right: 0;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    &:nth-child(even) {
+      float: none;
+      margin-left: 0;
+      margin-right: 0;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
   }
 }
 .full-size-module {
@@ -65,6 +100,9 @@
   @extend %clearfix;
   background: $color-text-light;
   padding: 0px 30px;
+  @media #{$brk-narrow} {
+    padding: 0px 20px;
+  }
 }
 .button-bar {
   @extend %clearfix;
@@ -76,12 +114,19 @@
 }
 
 .column1 {
-  @include column(65%)
+  @include column(65%);
+  @media #{$brk-narrow} {
+    width: 100%;
+    float: none;
+  }
 }
 .column2 {
-  @include column(35%)
+  @include column(35%);
+  @media #{$brk-narrow} {
+    width: 100%;
+    float: none;
+  }
 }
-
 .about {
   margin-bottom: 50px;
 }
@@ -96,4 +141,7 @@
   position: relative;
   margin-top: 80px;
   padding-left: 100px;
+  @media #{$brk-phone} {
+    padding-left: 0px;
+  }
 }

@@ -6,10 +6,6 @@
   padding-left: 20px;
   padding-right: 20px;
 }
-
-.header{
-  float: right;
-}
 .full-size-module {
   h1 {
     @include font-style(2.2em, bolder, $color-text-light);

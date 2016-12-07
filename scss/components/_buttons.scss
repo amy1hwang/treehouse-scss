@@ -11,6 +11,16 @@ span{
     cursor: pointer;
     box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.5);
   }
+  @media #{$brk-wide} {
+    margin-top: 5px;
+  }
+  @media (max-width: 880px) {
+    margin-right: 5px;
+    margin-top: 0;
+  }
+  @media (max-width: 785px) {
+    display: none;
+  }
 }
 .favorite, .play {
   float: right;
@@ -35,8 +45,15 @@ span{
   border-radius: 3px;
 }
 .iTunes {
-  @include container(100%, $color-text-light, 20px 0 0 0, 10px 0, null);
+  @include container(100%, $color-text-light, 20px auto, 10px 0, null);
   @include font-style(14px, 500, lighten($color-css-dark, 10%));
   border-radius: 5px;
   border: 2px solid lighten($color-css-dark, 10%);
+  @media #{$brk-narrow} {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    width: 300px;
+    float: none;
+  }
 }
